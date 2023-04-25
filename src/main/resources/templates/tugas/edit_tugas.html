@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Tugas</title>
+</head>
+<body>
+	<h1>Edit Tugas</h1>
+	<form method="post" action="/tugas/update/{id} (id=${tugas.id})">
+		<input type="hidden" name="id" value="{{tugas.id}}">
+		<label for="MataKuliah">Mata Kuliah:</label>
+		<input type="text" name="MataKuliah" value="{{tugas.MataKuliah}}" required>
+		<label for="Deskripsi">Deskripsi:</label>
+		<input type="text" name="Deskripsi" value="{{tugas.Deskripsi}}" required>
+		<label for="Status">Status:</label>
+		<select name="Status" required>
+			<option value="BELUM_SELESAI">Belum Selesai</option>
+			<option value="SELESAI" >Selesai</option>
+	</select>
+	<label for="KategoriPelaksanaan">Kategori Pelaksanaan:</label>
+	<select name="KategoriPelaksanaan" required>
+		    <option value="INDIVIDU">Individu</option>
+			<option value="KELOMPOK" >Kelompok</option>
+	</select>
+	<label for="TanggalMasuk">Tanggal Masuk:</label>
+	<input type="date" name="TanggalMasuk" value="{{tugas.TanggalMasuk}}" required>
+	<label for="Tanggal">Tanggal:</label>
+	<input type="date" name="Tanggal" value="{{tugas.Tanggal}}" required>
+	<button type="submit">Simpan</button>
+</form>
+</body>
+</html>

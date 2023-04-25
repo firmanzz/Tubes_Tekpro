@@ -1,0 +1,7 @@
+Model tekpro
+1. (Kategori Mata Kuliah) Mata Kuliah
+2. Deskripsi Tugas
+3. Status (SELESAI, BELUM_SELESAI, SEDANG_DIKERJAKAN)
+4. Tanggal Masuk Tugas
+5. Tanggal Pengumpulan Tugas
+6. Pelaksanakan (Individu, Kelompok)
